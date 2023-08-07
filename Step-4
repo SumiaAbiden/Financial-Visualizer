@@ -1,0 +1,45 @@
+# Write your code here.
+
+def CheckIfFloat(x):
+    if x.replace(".", "").isnumeric():
+        x = float(x)
+        return True
+    
+
+def Tax(y):
+    if y<=10000:
+        tax = y*0.05
+    elif y<=40000:
+        tax = y*0.1
+    elif y<=80000:
+        tax = y*0.15
+    elif y>80000:
+        tax = y*0.2
+    return round(tax, 2)
+    
+
+def percentage(x, salary):
+    percentage = x/salary * 100
+    return percentage
+    
+    
+    
+print('--------------------------------')
+print('----- FINANCIAL VISUALIZER -----')
+print('--------------------------------')
+
+salary = input('Annual Salary:\n')
+housing = input('Monthly Housing:\n')
+bills = input('Monthly Bills:\n')
+food = input('Weekly Food:\n')
+travel = input('Annual Travel:\n')
+
+
+if CheckIfFloat(salary) and CheckIfFloat(housing) and CheckIfFloat(bills) and CheckIfFloat(food) and CheckIfFloat(travel):
+    print("All inputs confirmed valid.")
+    housing = housing*12
+    bills = bills*12
+    food = food*52
+    
+else:
+    print("Invalid input, please try again.")
