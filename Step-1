@@ -1,0 +1,15 @@
+# Write your code here.
+# Click the PLAY button to run your code
+# Click the CHECK button to test your code and see if you wrote it correctly.
+# Remember to get the inputs in the correct order and to use the correct input prompts.
+
+print("--------------------------------")
+print("----- FINANCIAL VISUALIZER -----")
+print("--------------------------------")
+
+salary = input("Annual Salary:\n")
+housing = input("Monthly Housing:\n")
+bills = input("Monthly Bills:\n")
+food = input("Weekly Food:\n")
+travel = input("Annual Travel:\n")
+
