@@ -1,0 +1,22 @@
+# Write your code here.
+# Assume that the salary, housing, bills, food, and travel string variable are all already created.
+
+print('--------------------------------')
+print('----- FINANCIAL VISUALIZER -----')
+print('--------------------------------')
+
+salary = input('Annual Salary:\n')
+housing = input('Monthly Housing:\n')
+bills = input('Monthly Bills:\n')
+food = input('Weekly Food:\n')
+travel = input('Annual Travel:\n')
+
+
+def CheckIfFloat(x):
+    if x.replace(".", "").isnumeric():
+        return True
+    
+if CheckIfFloat(salary) and CheckIfFloat(housing) and CheckIfFloat(bills) and CheckIfFloat(food) and CheckIfFloat(travel):
+    print("All inputs confirmed valid.")
+else:
+    print("Invalid input, please try again.")
