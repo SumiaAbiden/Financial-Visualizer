@@ -1,0 +1,23 @@
+# Write your code here.
+# Assume that the salary variable has already been created and converted to a float.
+
+def CheckIfFloat(x):
+    if x.replace(".", "").isnumeric():
+        return True
+
+def Tax(y):
+    if y<=10000:
+        tax = y*0.05
+    elif y<=40000:
+        tax = y*0.1
+    elif y<=80000:
+        tax = y*0.15
+    elif y>80000:
+        tax = y*0.2
+    return round(tax, 2)
+
+salary = input('Annual Salary:\n')
+
+if CheckIfFloat(salary):
+    salary = float(salary)
+    print(Tax(salary))
