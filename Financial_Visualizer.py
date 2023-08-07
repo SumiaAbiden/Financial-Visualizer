@@ -31,8 +31,6 @@ if CheckIfFloat(salary) and CheckIfFloat(housing) and CheckIfFloat(bills) and Ch
         tax = round(salary*0.15 , 2)
     elif salary>80000:
         tax = round(salary*0.2 , 2)
-
-    
     
     housing = float(housing)*12
     bills = float(bills)*12
